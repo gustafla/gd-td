@@ -23,17 +23,16 @@ int main(int argc, char* argv[])
     
     //Open the screen (16bit, hardware where available)
     screen = SDL_SetVideoMode(WIDTH, HEIGHT, 16, SDL_HWSURFACE);
-
-    //Failure check
     if (!screen)
         return -2;
     
     //The shared common state object
     Common* common = new Common(screen);
     
-    //Sets window text
+    //Set window text
     SDL_WM_SetCaption(GAME_NAME, NULL);
     
+    //For timing and FPS measures
     unsigned int timeLast;
     int delay = 0;
     int frames = 0;

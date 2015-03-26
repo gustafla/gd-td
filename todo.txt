@@ -1,4 +1,7 @@
-//todo
-Le alibaba game?
+    Le alibaba game?
 
-Resoluutio: 800x600
+- Resoluutio: 800x600
+
+
+TODO:
+    DeltaTime to Common
