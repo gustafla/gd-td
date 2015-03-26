@@ -1,11 +1,15 @@
 //Le alibaba game
 
 #include <iostream>
+#include <SDL/SDL.h>
+#include "cleanup.hpp"
 
-using namespace std;
+//using namespace std;
+//Let's not use std all the time, use std::* instead
+//std::cout << "stuff\n"; for example
 
-int main()
+int main(int argc, char* argv[])
 {
-    cout << "Hello World!" << endl;
+    atexit(cleanup);
     return 0;
 }
