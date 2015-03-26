@@ -1,5 +1,5 @@
 # An empty makefile to copy to a fresh project.
-SRCS=main.cpp cleanup.cpp
+SRCS=main.cpp cleanup.cpp common.cpp
 TARGET=gd-td
 OBJS=$(SRCS:.cpp=.o)
 CFLAGS=-O2 -fomit-frame-pointer
