@@ -1,6 +1,6 @@
 # An empty makefile to copy to a fresh project.
 SRCS=main.cpp cleanup.cpp
-TARGET=
+TARGET=gd-td
 OBJS=$(SRCS:.cpp=.o)
 CFLAGS=-O2 -fomit-frame-pointer
 INCLUDES=-I./include
