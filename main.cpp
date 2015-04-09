@@ -5,6 +5,7 @@
 #include "cleanup.hpp"
 #include "config.hpp"
 #include "common.hpp"
+#include "map.hpp"
 
 //using namespace std;
 //Let's not use std all the time, use std::* instead
@@ -32,6 +33,8 @@ int main(int argc, char* argv[])
     //Set window text
     SDL_WM_SetCaption(GAME_NAME, NULL);
     
+    Map map(common);
+    
     //For timing and FPS measures
     unsigned int timeLast;
     int delay = 0;
@@ -53,6 +56,8 @@ int main(int argc, char* argv[])
 			if (common->gameEvent.key.keysym.sym == SDLK_ESCAPE)
 				common->running = false;
 		}
+
+        map.draw();
 
         //Updates the screen
 		SDL_Flip(screen);

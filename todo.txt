@@ -1,7 +1,11 @@
     Le alibaba game?
 
 - Resoluutio: 800x600
-
+- Yks ruutu
+- Tile 32x32
+- 25 tilee vaaka, 18 pysty
+- Mappi tekstitiedostosta
+- Maa (tie, ei-tie) (grafiikat voi vaihtaa)
 
 TODO:
     DeltaTime to Common

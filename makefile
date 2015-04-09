@@ -1,10 +1,10 @@
 # An empty makefile to copy to a fresh project.
-SRCS=main.cpp cleanup.cpp common.cpp
+SRCS=main.cpp cleanup.cpp common.cpp map.cpp gfxutil.cpp util.cpp
 TARGET=gd-td
 OBJS=$(SRCS:.cpp=.o)
 CFLAGS=-O2 -fomit-frame-pointer
 INCLUDES=-I./include
-LFLAGS=-lSDL
+LFLAGS=-lSDL -lSDL_image
 LIBS = 
 LIBS_CUSTOM = 
 CC=g++
