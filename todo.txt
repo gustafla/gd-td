@@ -4,8 +4,9 @@
 - Yks ruutu
 - Tile 32x32
 - 25 tilee vaaka, 18 pysty
-- Mappi tekstitiedostosta
+- GameMappi tekstitiedostosta
 - Maa (tie, ei-tie) (grafiikat voi vaihtaa)
 
 TODO:
     DeltaTime to Common
+    Draw map just once to a buffer and keep that for the rest of the game

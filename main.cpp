@@ -5,7 +5,7 @@
 #include "cleanup.hpp"
 #include "config.hpp"
 #include "common.hpp"
-#include "map.hpp"
+#include "game_map.hpp"
 
 //using namespace std;
 //Let's not use std all the time, use std::* instead
@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
     //Set window text
     SDL_WM_SetCaption(GAME_NAME, NULL);
     
-    Map map(common);
+    GameMap map(common);
     
     //For timing and FPS measures
     unsigned int timeLast;
